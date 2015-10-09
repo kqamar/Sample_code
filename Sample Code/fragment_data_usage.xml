@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="com.stc.fragments.DataUsageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dataPlanName"
+                style="@style/DataChartPackageLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_spacing_unit"
+                android:layout_marginTop="@dimen/default_spacing_unit"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/periodEndsLabel"
+                style="@style/DataChartPeriodEndText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_spacing_unit"
+                android:layout_marginTop="@dimen/default_spacing_unit"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/periodEnd"
+                style="@style/DataChartHeaderDaysText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_spacing_unit"
+                android:layout_marginTop="@dimen/default_spacing_unit"
+                android:gravity="center" />
+
+            <com.stc.charts.CircleChart
+                android:id="@+id/dataUsageChart"
+                style="@style/CircleChart"
+                android:layout_width="@dimen/data_usage_chart"
+                android:layout_height="@dimen/data_usage_chart" />
+
+            <TextView
+                android:id="@+id/dataRemainingLabel"
+                style="@style/DataChartFooterText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_spacing_unit"
+                android:layout_marginTop="@dimen/default_spacing_unit"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/dataRemainingAmount"
+                style="@style/DataChartAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_spacing_unit"
+                android:layout_marginTop="@dimen/default_spacing_unit"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/dataLastUpdated"
+                style="@style/DataChartLastUpdateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_spacing_unit"
+                android:layout_marginTop="@dimen/default_spacing_unit"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
